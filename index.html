@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
 <meta charset="utf-8"/>
@@ -14,7 +13,7 @@ input{min-width:260px;flex:1}.legend{font-size:13px;color:var(--muted);margin:10
 table{border-collapse:collapse;width:100%;min-width:1580px} th,td{padding:11px 10px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}
 th{position:sticky;top:0;background:#f9fafb;text-align:left;white-space:nowrap;z-index:1}tr:hover td{background:#fcfcfd}.school{font-weight:700}
 .tag{display:inline-block;padding:3px 7px;border-radius:999px;font-size:12px;margin:1px 2px 1px 0;background:#eef2ff}.ok{background:#ecfdf5;color:#065f46}.mid{background:#fffbeb;color:#92400e}.warn{background:#fef2f2;color:#991b1b}
-.small{font-size:12px}.note{margin-top:16px;background:white;border:1px solid var(--line);border-radius:12px;padding:16px;line-height:1.55}
+.small{font-size:12px}.note{margin-top:16px;background:white;border:1px solid var(--line);border-radius:12px;padding:16px;line-height:1.55}.section{margin-top:24px}
 </style>
 </head>
 <body>
@@ -27,11 +26,10 @@ th{position:sticky;top:0;background:#f9fafb;text-align:left;white-space:nowrap;z
 <select id="religion"><option value="">종교 성향 전체</option><option value="낮음">낮음</option><option value="중간">중간</option><option value="강함">강함</option></select>
 </div>
 <div class="legend">※ 가격은 공식 공개가와 사용자가 받은 개별 제안을 구분했습니다. 개별 제안가는 객관 비교 점수에 자동 반영하지 않는 것이 안전합니다.</div>
-<div class="table-wrap">
-<table id="tbl">
-<thead><tr>
-<th>학교</th><th>주</th><th>G7</th><th>입학 가능 학년</th><th>형태</th><th>종교</th><th>종교 성향</th><th>공개/논의 비용</th><th>FindingSchool</th><th>Niche</th><th>국제학생</th><th>보딩비율</th><th>영어지원</th><th>스포츠/적응</th><th>재정보조 공개 여부</th><th>현재 메모</th>
-</tr></thead>
+
+<h2>G7부터 보딩 가능한 학교</h2>
+<div class="table-wrap"><table id="tbl">
+<thead><tr><th>학교</th><th>주</th><th>G7</th><th>입학 가능 학년</th><th>형태</th><th>종교</th><th>종교 성향</th><th>공개/논의 비용</th><th>FindingSchool</th><th>Niche</th><th>국제학생</th><th>보딩비율</th><th>영어지원</th><th>스포츠/적응</th><th>재정보조 공개 여부</th><th>현재 메모</th></tr></thead>
 <tbody>
 <tr data-religion="낮음" data-type="공학"><td class="school">Rabun Gap-Nacoochee</td><td>Georgia</td><td>✅</td><td>7~12학년</td><td>공학</td><td>기독교 계열</td><td><span class="tag ok">낮음~중간</span></td><td>국제 보딩 약 <b>$77.3K</b><br/><span class="small">Boarding 평균 FA 약 $29K 공개</span></td><td>A- / 약 #122</td><td>A+ / Boarding 약 #114</td><td>약 25%대 공개자료</td><td>보딩 비중 높음</td><td>English Immersion / ESL</td><td><span class="tag ok">매우 적합</span></td><td><b>국제학생 신청 가능 명시</b><br/>65% boarding aid 수혜 공개</td><td>$45K 도달엔 평균보다 조금 더 큰 aid 필요</td></tr>
 <tr data-religion="낮음" data-type="공학"><td class="school">Tallulah Falls School</td><td>Georgia</td><td>✅</td><td>7~12학년 (보딩)</td><td>공학</td><td>비종파적 Christian</td><td><span class="tag ok">낮음</span></td><td>공식 국제 약 <b>$47K</b><br/><span class="small">사용자 제안 $45K는 개별 조건</span></td><td>B+ / 약 #168</td><td>A+ / Boarding 약 #236</td><td>약 16~19%</td><td>약 20~27%</td><td>ESL 제공 자료 있음</td><td><span class="tag ok">매우 적합</span></td><td>지원 가능하나 국제학생 평균 aid 공개수치 제한적</td><td>G7~8 적응·스포츠·규모 균형형</td></tr>
@@ -41,25 +39,30 @@ th{position:sticky;top:0;background:#f9fafb;text-align:left;white-space:nowrap;z
 <tr data-religion="중간" data-type="남학교"><td class="school">Chaminade College Prep</td><td>Missouri</td><td>✅</td><td>6~12학년</td><td>남학교</td><td>Catholic / Marianist</td><td><span class="tag mid">중간~강함</span></td><td>국제 총비용 대략 <b>$60K대 초반</b></td><td>A / 약 #79</td><td>A권</td><td>약 10% 전후</td><td>낮~중간</td><td>ESL/국제학생 지원</td><td><span class="tag ok">적합</span></td><td>Academic Scholarship 최대 약 $8K<br/>국제기숙생 named scholarship 존재</td><td>신앙교육·Retreat·Theology 요구 존재</td></tr>
 <tr data-religion="중간" data-type="공학"><td class="school">St. Bernard's Academy</td><td>California</td><td>✅</td><td>7~12학년</td><td>공학</td><td>Catholic</td><td><span class="tag mid">중간</span></td><td>대략 <b>$41K~45K</b> 자료</td><td>비교 가능한 프로필 제한</td><td>A- / Boarding 하위권</td><td>학교측 약 15%</td><td>약 10%대</td><td>국제학생 경로 있음</td><td><span class="tag mid">보통</span></td><td>공개 국제 aid 데이터 제한</td><td>후기 평점은 높으나 진학 공개지표 확인 필요</td></tr>
 <tr data-religion="낮음" data-type="공학"><td class="school">The Webb School</td><td>Tennessee</td><td>✅</td><td>6~12학년</td><td>공학</td><td>비종교/독립</td><td><span class="tag ok">낮음</span></td><td>국제 보딩 약 <b>$72.8K</b></td><td>A- / 약 #100</td><td>A권</td><td>확인 필요</td><td>확인 필요</td><td>국제학생 지원</td><td><span class="tag ok">적합</span></td><td>국제가정 aid 신청 경로 존재, 평균 국제 award 비공개</td><td>상향지원 후보</td></tr>
-<tr data-religion="중간" data-type="공학"><td class="school">St. Stephen's Episcopal School</td><td>Austin, Texas</td><td>❌</td><td>8~12학년 (보딩)</td><td>공학</td><td>Episcopal</td><td><span class="tag mid">중간</span></td><td>2026–27 국제 보딩 약 <b>$85.2K</b></td><td><b>A+ / 21위·249개</b></td><td><b>A+ / 34위·441개</b></td><td>보딩생 중 약 54%</td><td>약 26%</td><td>Transitional English / 국제학생 지원</td><td><span class="tag ok">적합</span></td><td>국제학생도 FA 검토 가능. 보딩생 약 48% FA 수혜 공개, 개별 award $1,880~$60K+ 공개</td><td><b>G8부터 보딩 가능</b>. 상위권 학교. Daily chapel은 있으나 다양한 종교 배경 존중. $45K 예산에는 약 $40.2K 지원 필요.</td></tr>
 <tr data-religion="낮음" data-type="공학"><td class="school">Shattuck-St. Mary's</td><td>Minnesota</td><td>✅</td><td>6~12학년</td><td>공학</td><td>Episcopal 전통/현재 독립성 강함</td><td><span class="tag ok">낮음~중간</span></td><td>약 <b>$73K</b> + 일부 스포츠 프로그램 추가비</td><td>A- / 약 #114</td><td>A권</td><td>높은 편</td><td>확인 필요</td><td>국제학생 지원</td><td><span class="tag ok">스포츠 강함</span></td><td>국제가정 aid 신청 가능, $45K 도달 여부 불명확</td><td>엘리트 스포츠 성격 강함</td></tr>
-</tbody>
-</table>
-</div>
-<div id="hold-schools" style="margin-top:24px"><h2>보류 학교</h2><div class="sub">현재 비교에서 우선순위를 낮춘 학교입니다. 삭제하지 않고 별도 보관합니다.</div><div class="table-wrap"><table id="holdTbl"><thead><tr>
-<th>학교</th><th>주</th><th>G7</th><th>입학 가능 학년</th><th>형태</th><th>종교</th><th>종교 성향</th><th>공개/논의 비용</th><th>FindingSchool</th><th>Niche</th><th>국제학생</th><th>보딩비율</th><th>영어지원</th><th>스포츠/적응</th><th>재정보조 공개 여부</th><th>현재 메모</th>
-</tr></thead><tbody><tr data-religion="강함" data-type="남학교"><td class="school">Subiaco Academy</td><td>Arkansas</td><td>✅</td><td>7~12학년</td><td>남학교</td><td>Catholic / Benedictine</td><td><span class="tag warn">강함</span></td><td>약 <b>$34K~36K대</b> 공개자료</td><td>B / 약 #209</td><td>A+ / Boarding 약 #186</td><td>약 10%</td><td>약 40~60%</td><td>ESL 자료 있음</td><td><span class="tag ok">적합</span></td><td>Tuition assistance / Abbey scholarship 기금</td><td>수도원 정체성 강해 현재 선호에서는 우선순위 낮음</td></tr><tr data-religion="강함" data-type="공학"><td class="school">St. Bernard Prep</td><td>Alabama</td><td>✅</td><td>7~12학년</td><td>공학</td><td>Catholic / Benedictine</td><td><span class="tag warn">중간~강함</span></td><td>국제 공식 약 <b>$55K</b></td><td>B / 약 #226</td><td>A권</td><td>낮음</td><td>약 25%</td><td>지원 프로그램 있음</td><td><span class="tag mid">보통</span></td><td>학교가 최대 70% need-based 가능성 안내</td><td>재정지원 폭은 크지만 Benedictine 색채</td></tr><tr data-religion="낮음" data-type="공학"><td class="school">Southeastern Preparatory Academy</td><td>Florida</td><td>✅</td><td>6~12학년</td><td>공학</td><td>Non-denominational</td><td><span class="tag ok">낮음</span></td><td>약 <b>$35K</b> 공개자료</td><td>FS 종합순위 미확인</td><td>Niche 전국 보딩순위 미확인</td><td>확인 필요</td><td>확인 필요</td><td>ESL 제공 자료 있음</td><td><span class="tag mid">보통</span></td><td>공개 국제 aid 데이터 제한</td><td>신설·성과 데이터가 짧아 장기 검증자료 부족</td></tr><tr data-religion="낮음" data-type="공학"><td class="school">Pillsbury College Prep</td><td>Minnesota</td><td>✅</td><td>6~12학년</td><td>공학</td><td>Non-denominational</td><td><span class="tag ok">낮음</span></td><td>약 <b>$21K~26K</b> 공개자료</td><td>FS 종합순위 미확인</td><td>Niche 전국 보딩순위 미확인</td><td>국제학생 비중 높음</td><td>보딩 비중 매우 높음</td><td>국제학생 지원</td><td><span class="tag mid">보통</span></td><td>공개 국제 aid 데이터 제한</td><td>2014년 설립, 전통 보딩과 비교할 장기 성과 데이터 부족</td></tr></tbody></table></div></div><div class="note"><b>현재 비교 프레임</b><br/>
-① G7~8: 스포츠·영어·미국문화 적응, 안전한 기숙생활, ESL/EAL, 친구관계 형성<br/>
-② G9 이후: 학업·대학진학력이 더 높은 보딩으로 전학 가능성 검토<br/>
-③ 비용: 정가보다 국제학생에게 실제로 적용 가능한 공식 Aid/Scholarship 우선 확인<br/>
-④ 종교: Catholic 자체는 허용하되, 수도원 중심·강한 신앙형성 학교는 우선순위 낮춤
-</div>
+</tbody></table></div>
+
+<div class="section" id="g8-schools"><h2>G8 이후부터 보딩 가능한 학교</h2><div class="sub">G7에는 보딩 입학이 어렵지만, G8 이후 상향지원 또는 전학 후보로 관리합니다.</div><div class="table-wrap"><table id="g8Tbl">
+<thead><tr><th>학교</th><th>주</th><th>G7</th><th>입학 가능 학년</th><th>형태</th><th>종교</th><th>종교 성향</th><th>공개/논의 비용</th><th>FindingSchool</th><th>Niche</th><th>국제학생</th><th>보딩비율</th><th>영어지원</th><th>스포츠/적응</th><th>재정보조 공개 여부</th><th>현재 메모</th></tr></thead>
+<tbody><tr data-religion="중간" data-type="공학"><td class="school">St. Stephen's Episcopal School</td><td>Austin, Texas</td><td>❌</td><td>8~12학년 (보딩)</td><td>공학</td><td>Episcopal</td><td><span class="tag mid">중간</span></td><td>2026–27 국제 보딩 약 <b>$85.2K</b></td><td><b>A+ / 21위·249개</b></td><td><b>A+ / 34위·441개</b></td><td>보딩생 중 약 54%</td><td>약 26%</td><td>Transitional English / 국제학생 지원</td><td><span class="tag ok">적합</span></td><td>국제학생도 FA 검토 가능. 보딩생 약 48% FA 수혜 공개, 개별 award $1,880~$60K+ 공개</td><td><b>G8부터 보딩 가능</b>. 상위권 학교. Daily chapel은 있으나 다양한 종교 배경 존중. $45K 예산에는 약 $40.2K 지원 필요.</td></tr></tbody>
+</table></div></div>
+
+<div class="section" id="hold-schools"><h2>보류 학교</h2><div class="sub">현재 비교에서 우선순위를 낮춘 학교입니다. 삭제하지 않고 별도 보관합니다.</div><div class="table-wrap"><table id="holdTbl">
+<thead><tr><th>학교</th><th>주</th><th>G7</th><th>입학 가능 학년</th><th>형태</th><th>종교</th><th>종교 성향</th><th>공개/논의 비용</th><th>FindingSchool</th><th>Niche</th><th>국제학생</th><th>보딩비율</th><th>영어지원</th><th>스포츠/적응</th><th>재정보조 공개 여부</th><th>현재 메모</th></tr></thead>
+<tbody>
+<tr data-religion="강함" data-type="남학교"><td class="school">Subiaco Academy</td><td>Arkansas</td><td>✅</td><td>7~12학년</td><td>남학교</td><td>Catholic / Benedictine</td><td><span class="tag warn">강함</span></td><td>약 <b>$34K~36K대</b> 공개자료</td><td>B / 약 #209</td><td>A+ / Boarding 약 #186</td><td>약 10%</td><td>약 40~60%</td><td>ESL 자료 있음</td><td><span class="tag ok">적합</span></td><td>Tuition assistance / Abbey scholarship 기금</td><td>수도원 정체성 강해 현재 선호에서는 우선순위 낮음</td></tr>
+<tr data-religion="강함" data-type="공학"><td class="school">St. Bernard Prep</td><td>Alabama</td><td>✅</td><td>7~12학년</td><td>공학</td><td>Catholic / Benedictine</td><td><span class="tag warn">중간~강함</span></td><td>국제 공식 약 <b>$55K</b></td><td>B / 약 #226</td><td>A권</td><td>낮음</td><td>약 25%</td><td>지원 프로그램 있음</td><td><span class="tag mid">보통</span></td><td>학교가 최대 70% need-based 가능성 안내</td><td>재정지원 폭은 크지만 Benedictine 색채</td></tr>
+<tr data-religion="낮음" data-type="공학"><td class="school">Southeastern Preparatory Academy</td><td>Florida</td><td>✅</td><td>6~12학년</td><td>공학</td><td>Non-denominational</td><td><span class="tag ok">낮음</span></td><td>약 <b>$35K</b> 공개자료</td><td>FS 종합순위 미확인</td><td>Niche 전국 보딩순위 미확인</td><td>확인 필요</td><td>확인 필요</td><td>ESL 제공 자료 있음</td><td><span class="tag mid">보통</span></td><td>공개 국제 aid 데이터 제한</td><td>신설·성과 데이터가 짧아 장기 검증자료 부족</td></tr>
+<tr data-religion="낮음" data-type="공학"><td class="school">Pillsbury College Prep</td><td>Minnesota</td><td>✅</td><td>6~12학년</td><td>공학</td><td>Non-denominational</td><td><span class="tag ok">낮음</span></td><td>약 <b>$21K~26K</b> 공개자료</td><td>FS 종합순위 미확인</td><td>Niche 전국 보딩순위 미확인</td><td>국제학생 비중 높음</td><td>보딩 비중 매우 높음</td><td>국제학생 지원</td><td><span class="tag mid">보통</span></td><td>공개 국제 aid 데이터 제한</td><td>2014년 설립, 전통 보딩과 비교할 장기 성과 데이터 부족</td></tr>
+</tbody></table></div></div>
+
+<div class="note"><b>현재 비교 프레임</b><br/>① G7~8: 스포츠·영어·미국문화 적응, 안전한 기숙생활, ESL/EAL, 친구관계 형성<br/>② G9 이후: 학업·대학진학력이 더 높은 보딩으로 전학 가능성 검토<br/>③ 비용: 정가보다 국제학생에게 실제로 적용 가능한 공식 Aid/Scholarship 우선 확인<br/>④ 종교: Catholic 자체는 허용하되, 수도원 중심·강한 신앙형성 학교는 우선순위 낮춤</div>
 </div>
 <script>
 const q=document.getElementById('q'),type=document.getElementById('type'),religion=document.getElementById('religion');
 function filter(){
  const term=q.value.toLowerCase();
- document.querySelectorAll('#tbl tbody tr').forEach(tr=>{
+ document.querySelectorAll('#tbl tbody tr,#g8Tbl tbody tr').forEach(tr=>{
   const ok1=tr.innerText.toLowerCase().includes(term);
   const ok2=!type.value || tr.dataset.type===type.value;
   const rel=tr.dataset.religion||"";
