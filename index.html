@@ -1,75 +1,31 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>미국 보딩스쿨 비교 허브</title>
-<style>
-:root{--bg:#f6f7f9;--card:#fff;--text:#1f2937;--muted:#6b7280;--line:#e5e7eb}
-*{box-sizing:border-box} body{margin:0;font-family:Arial,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--text)}
-.wrap{max-width:1500px;margin:0 auto;padding:24px} h1{margin:0 0 6px;font-size:28px}.sub{color:var(--muted);margin-bottom:20px}
-.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px} input,select{padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:white}
-input{min-width:260px;flex:1}.legend{font-size:13px;color:var(--muted);margin:10px 0 16px}.table-wrap{overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
-table{border-collapse:collapse;width:100%;min-width:1580px} th,td{padding:11px 10px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}
-th{position:sticky;top:0;background:#f9fafb;text-align:left;white-space:nowrap;z-index:1}tr:hover td{background:#fcfcfd}.school{font-weight:700}
-.tag{display:inline-block;padding:3px 7px;border-radius:999px;font-size:12px;margin:1px 2px 1px 0;background:#eef2ff}.ok{background:#ecfdf5;color:#065f46}.mid{background:#fffbeb;color:#92400e}.warn{background:#fef2f2;color:#991b1b}
-.small{font-size:12px}.note{margin-top:16px;background:white;border:1px solid var(--line);border-radius:12px;padding:16px;line-height:1.55}.section{margin-top:24px}
-</style>
-</head>
-<body>
-<div class="wrap">
-<h1>미국 보딩스쿨 비교 허브</h1>
-<div class="sub">지금까지 검토한 학교를 한눈에 비교하는 개인용 대시보드 · 지원 전 학교 공식자료 재확인 필요</div>
-<div class="toolbar">
-<input id="q" placeholder="학교명, 주, 특징 검색"/>
-<select id="type"><option value="">학교 형태 전체</option><option value="남학교">남학교</option><option value="공학">공학</option></select>
-<select id="religion"><option value="">종교 성향 전체</option><option value="낮음">낮음</option><option value="중간">중간</option><option value="강함">강함</option></select>
-</div>
-<div class="legend">※ 가격은 공식 공개가와 사용자가 받은 개별 제안을 구분했습니다. 개별 제안가는 객관 비교 점수에 자동 반영하지 않는 것이 안전합니다.</div>
-
-<h2>G7부터 보딩 가능한 학교</h2>
-<div class="table-wrap"><table id="tbl">
-<thead><tr><th>학교</th><th>주</th><th>G7</th><th>입학 가능 학년</th><th>형태</th><th>종교</th><th>종교 성향</th><th>공개/논의 비용</th><th>FindingSchool</th><th>Niche</th><th>국제학생</th><th>보딩비율</th><th>영어지원</th><th>스포츠/적응</th><th>재정보조 공개 여부</th><th>현재 메모</th></tr></thead>
-<tbody>
-<tr data-religion="낮음" data-type="공학"><td class="school">Rabun Gap-Nacoochee</td><td>Georgia</td><td>✅</td><td>7~12학년</td><td>공학</td><td>기독교 계열</td><td><span class="tag ok">낮음~중간</span></td><td>국제 보딩 약 <b>$77.3K</b><br/><span class="small">Boarding 평균 FA 약 $29K 공개</span></td><td>A- / 약 #122</td><td>A+ / Boarding 약 #114</td><td>약 25%대 공개자료</td><td>보딩 비중 높음</td><td>English Immersion / ESL</td><td><span class="tag ok">매우 적합</span></td><td><b>국제학생 신청 가능 명시</b><br/>65% boarding aid 수혜 공개</td><td>$45K 도달엔 평균보다 조금 더 큰 aid 필요</td></tr>
-<tr data-religion="낮음" data-type="공학"><td class="school">Tallulah Falls School</td><td>Georgia</td><td>✅</td><td>7~12학년 (보딩)</td><td>공학</td><td>비종파적 Christian</td><td><span class="tag ok">낮음</span></td><td>공식 국제 약 <b>$47K</b><br/><span class="small">사용자 제안 $45K는 개별 조건</span></td><td>B+ / 약 #168</td><td>A+ / Boarding 약 #236</td><td>약 16~19%</td><td>약 20~27%</td><td>ESL 제공 자료 있음</td><td><span class="tag ok">매우 적합</span></td><td>지원 가능하나 국제학생 평균 aid 공개수치 제한적</td><td>G7~8 적응·스포츠·규모 균형형</td></tr>
-<tr data-religion="중간" data-type="남학교"><td class="school">Saint Stanislaus (SSC)</td><td>Mississippi</td><td>✅</td><td>7~12학년</td><td>남학교</td><td>Catholic</td><td><span class="tag mid">중간</span></td><td>국제 실제 견적 확인 필요<br/>사용자 제안 <b>$40K</b></td><td>B+ / 약 #189</td><td>A / Boarding 약 #308</td><td>약 9%</td><td>약 15~22%</td><td>G7 ESL 명시</td><td><span class="tag ok">매우 적합</span></td><td>국제학생 FA 신청 가능<br/>Catholic parish support 명시</td><td>남학교·스포츠·중학생 생활구조 강점</td></tr>
-<tr data-religion="낮음" data-type="공학"><td class="school">Thomas Jefferson School</td><td>Missouri</td><td>✅</td><td>7~12학년</td><td>공학</td><td>비종교</td><td><span class="tag ok">낮음</span></td><td>공식 국제 보딩 약 <b>$74.5K</b></td><td>A / 약 #73</td><td>A+ / Boarding 약 #98</td><td>약 20%대 자료</td><td>낮~중간</td><td>국제학생 academic support</td><td><span class="tag mid">학업형</span></td><td>국제학생 aid 신청 가능 명시</td><td>학업 데이터 강함, 학교 규모 매우 작음</td></tr>
-<tr data-religion="낮음" data-type="공학"><td class="school">The Knox School</td><td>New York</td><td>✅</td><td>6~12학년 + PG</td><td>공학</td><td>비종교</td><td><span class="tag ok">낮음</span></td><td>공식 보딩 <b>$60K</b> + 국제비용/보험/ENL 가능</td><td>A- / 약 #105</td><td>A+ / Boarding 약 #151</td><td>약 40%</td><td>약 75%+</td><td>ENL 체계 명확</td><td><span class="tag ok">적합</span></td><td>개별 scholarship 가능, 공개 국제 평균 aid 불명확</td><td>국제학생 비중 높음</td></tr>
-<tr data-religion="중간" data-type="남학교"><td class="school">Chaminade College Prep</td><td>Missouri</td><td>✅</td><td>6~12학년</td><td>남학교</td><td>Catholic / Marianist</td><td><span class="tag mid">중간~강함</span></td><td>국제 총비용 대략 <b>$60K대 초반</b></td><td>A / 약 #79</td><td>A권</td><td>약 10% 전후</td><td>낮~중간</td><td>ESL/국제학생 지원</td><td><span class="tag ok">적합</span></td><td>Academic Scholarship 최대 약 $8K<br/>국제기숙생 named scholarship 존재</td><td>신앙교육·Retreat·Theology 요구 존재</td></tr>
-<tr data-religion="중간" data-type="공학"><td class="school">St. Bernard's Academy</td><td>California</td><td>✅</td><td>7~12학년</td><td>공학</td><td>Catholic</td><td><span class="tag mid">중간</span></td><td>대략 <b>$41K~45K</b> 자료</td><td>비교 가능한 프로필 제한</td><td>A- / Boarding 하위권</td><td>학교측 약 15%</td><td>약 10%대</td><td>국제학생 경로 있음</td><td><span class="tag mid">보통</span></td><td>공개 국제 aid 데이터 제한</td><td>후기 평점은 높으나 진학 공개지표 확인 필요</td></tr>
-<tr data-religion="낮음" data-type="공학"><td class="school">The Webb School</td><td>Tennessee</td><td>✅</td><td>6~12학년</td><td>공학</td><td>비종교/독립</td><td><span class="tag ok">낮음</span></td><td>국제 보딩 약 <b>$72.8K</b></td><td>A- / 약 #100</td><td>A권</td><td>확인 필요</td><td>확인 필요</td><td>국제학생 지원</td><td><span class="tag ok">적합</span></td><td>국제가정 aid 신청 경로 존재, 평균 국제 award 비공개</td><td>상향지원 후보</td></tr>
-<tr data-religion="낮음" data-type="공학"><td class="school">Shattuck-St. Mary's</td><td>Minnesota</td><td>✅</td><td>6~12학년</td><td>공학</td><td>Episcopal 전통/현재 독립성 강함</td><td><span class="tag ok">낮음~중간</span></td><td>약 <b>$73K</b> + 일부 스포츠 프로그램 추가비</td><td>A- / 약 #114</td><td>A권</td><td>높은 편</td><td>확인 필요</td><td>국제학생 지원</td><td><span class="tag ok">스포츠 강함</span></td><td>국제가정 aid 신청 가능, $45K 도달 여부 불명확</td><td>엘리트 스포츠 성격 강함</td></tr>
-</tbody></table></div>
-
-<div class="section" id="g8-schools"><h2>G8 이후부터 보딩 가능한 학교</h2><div class="sub">G7에는 보딩 입학이 어렵지만, G8 이후 상향지원 또는 전학 후보로 관리합니다.</div><div class="table-wrap"><table id="g8Tbl">
-<thead><tr><th>학교</th><th>주</th><th>G7</th><th>입학 가능 학년</th><th>형태</th><th>종교</th><th>종교 성향</th><th>공개/논의 비용</th><th>FindingSchool</th><th>Niche</th><th>국제학생</th><th>보딩비율</th><th>영어지원</th><th>스포츠/적응</th><th>재정보조 공개 여부</th><th>현재 메모</th></tr></thead>
-<tbody><tr data-religion="중간" data-type="공학"><td class="school">St. Stephen's Episcopal School</td><td>Austin, Texas</td><td>❌</td><td>8~12학년 (보딩)</td><td>공학</td><td>Episcopal</td><td><span class="tag mid">중간</span></td><td>2026–27 국제 보딩 약 <b>$85.2K</b></td><td><b>A+ / 21위·249개</b></td><td><b>A+ / 34위·441개</b></td><td>보딩생 중 약 54%</td><td>약 26%</td><td>Transitional English / 국제학생 지원</td><td><span class="tag ok">적합</span></td><td>국제학생도 FA 검토 가능. 보딩생 약 48% FA 수혜 공개, 개별 award $1,880~$60K+ 공개</td><td><b>G8부터 보딩 가능</b>. 상위권 학교. Daily chapel은 있으나 다양한 종교 배경 존중. $45K 예산에는 약 $40.2K 지원 필요.</td></tr></tbody>
-</table></div></div>
-
-<div class="section" id="hold-schools"><h2>보류 학교</h2><div class="sub">현재 비교에서 우선순위를 낮춘 학교입니다. 삭제하지 않고 별도 보관합니다.</div><div class="table-wrap"><table id="holdTbl">
-<thead><tr><th>학교</th><th>주</th><th>G7</th><th>입학 가능 학년</th><th>형태</th><th>종교</th><th>종교 성향</th><th>공개/논의 비용</th><th>FindingSchool</th><th>Niche</th><th>국제학생</th><th>보딩비율</th><th>영어지원</th><th>스포츠/적응</th><th>재정보조 공개 여부</th><th>현재 메모</th></tr></thead>
-<tbody>
-<tr data-religion="강함" data-type="남학교"><td class="school">Subiaco Academy</td><td>Arkansas</td><td>✅</td><td>7~12학년</td><td>남학교</td><td>Catholic / Benedictine</td><td><span class="tag warn">강함</span></td><td>약 <b>$34K~36K대</b> 공개자료</td><td>B / 약 #209</td><td>A+ / Boarding 약 #186</td><td>약 10%</td><td>약 40~60%</td><td>ESL 자료 있음</td><td><span class="tag ok">적합</span></td><td>Tuition assistance / Abbey scholarship 기금</td><td>수도원 정체성 강해 현재 선호에서는 우선순위 낮음</td></tr>
-<tr data-religion="강함" data-type="공학"><td class="school">St. Bernard Prep</td><td>Alabama</td><td>✅</td><td>7~12학년</td><td>공학</td><td>Catholic / Benedictine</td><td><span class="tag warn">중간~강함</span></td><td>국제 공식 약 <b>$55K</b></td><td>B / 약 #226</td><td>A권</td><td>낮음</td><td>약 25%</td><td>지원 프로그램 있음</td><td><span class="tag mid">보통</span></td><td>학교가 최대 70% need-based 가능성 안내</td><td>재정지원 폭은 크지만 Benedictine 색채</td></tr>
-<tr data-religion="낮음" data-type="공학"><td class="school">Southeastern Preparatory Academy</td><td>Florida</td><td>✅</td><td>6~12학년</td><td>공학</td><td>Non-denominational</td><td><span class="tag ok">낮음</span></td><td>약 <b>$35K</b> 공개자료</td><td>FS 종합순위 미확인</td><td>Niche 전국 보딩순위 미확인</td><td>확인 필요</td><td>확인 필요</td><td>ESL 제공 자료 있음</td><td><span class="tag mid">보통</span></td><td>공개 국제 aid 데이터 제한</td><td>신설·성과 데이터가 짧아 장기 검증자료 부족</td></tr>
-<tr data-religion="낮음" data-type="공학"><td class="school">Pillsbury College Prep</td><td>Minnesota</td><td>✅</td><td>6~12학년</td><td>공학</td><td>Non-denominational</td><td><span class="tag ok">낮음</span></td><td>약 <b>$21K~26K</b> 공개자료</td><td>FS 종합순위 미확인</td><td>Niche 전국 보딩순위 미확인</td><td>국제학생 비중 높음</td><td>보딩 비중 매우 높음</td><td>국제학생 지원</td><td><span class="tag mid">보통</span></td><td>공개 국제 aid 데이터 제한</td><td>2014년 설립, 전통 보딩과 비교할 장기 성과 데이터 부족</td></tr>
-</tbody></table></div></div>
-
-<div class="note"><b>현재 비교 프레임</b><br/>① G7~8: 스포츠·영어·미국문화 적응, 안전한 기숙생활, ESL/EAL, 친구관계 형성<br/>② G9 이후: 학업·대학진학력이 더 높은 보딩으로 전학 가능성 검토<br/>③ 비용: 정가보다 국제학생에게 실제로 적용 가능한 공식 Aid/Scholarship 우선 확인<br/>④ 종교: Catholic 자체는 허용하되, 수도원 중심·강한 신앙형성 학교는 우선순위 낮춤</div>
-</div>
-<script>
-const q=document.getElementById('q'),type=document.getElementById('type'),religion=document.getElementById('religion');
-function filter(){
- const term=q.value.toLowerCase();
- document.querySelectorAll('#tbl tbody tr,#g8Tbl tbody tr').forEach(tr=>{
-  const ok1=tr.innerText.toLowerCase().includes(term);
-  const ok2=!type.value || tr.dataset.type===type.value;
-  const rel=tr.dataset.religion||"";
-  const ok3=!religion.value || rel===religion.value || (religion.value==="중간" && rel.includes("중간")) || (religion.value==="낮음" && rel.includes("낮음"));
-  tr.style.display=(ok1&&ok2&&ok3)?'':'none';
- });
-}
-[q,type,religion].forEach(el=>el.addEventListener('input',filter));
-</script>
-</body></html>
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>미국 보딩스쿨 비교 허브</title><style>:root{--bg:#f6f7f9;--card:#fff;--text:#1f2937;--muted:#6b7280;--line:#e5e7eb}*{box-sizing:border-box}body{margin:0;font-family:Arial,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--text)}.wrap{max-width:1600px;margin:auto;padding:24px}h1{margin:0 0 6px;font-size:28px}h2{margin:28px 0 6px}.sub,.legend{color:var(--muted)}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}input,select{padding:10px;border:1px solid var(--line);border-radius:8px;background:#fff}input{min-width:300px;flex:1}.table-wrap{overflow:auto;background:#fff;border:1px solid var(--line);border-radius:12px}table{border-collapse:collapse;width:100%;min-width:1720px}th,td{padding:10px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:top}th{position:sticky;top:0;background:#f9fafb;text-align:left;white-space:nowrap}tr:hover td{background:#fcfcfd}.school{font-weight:700}.note{margin-top:22px;padding:15px;background:#fff;border:1px solid var(--line);border-radius:12px;line-height:1.55}.yes{font-weight:700}.no{color:#991b1b;font-weight:700}</style></head><body><div class="wrap"><h1>미국 보딩스쿨 비교 허브</h1><div class="sub">보딩 시작 학년을 학교 공식자료 우선으로 재검증 · 2026-09-17 기준</div><div class="toolbar"><input id="q" placeholder="학교명, 위치, 특징 검색"><select id="type"><option value="">학교 형태 전체</option><option>남학교</option><option>공학</option></select><select id="religion"><option value="">종교 성향 전체</option><option>낮음</option><option>중간</option><option>강함</option></select></div><div class="legend">※ '보딩 가능 학년'은 학교 전체 학년이 아니라 실제 기숙사 입학 가능 학년 기준입니다. 가격은 공식 공개가와 제3자 디렉토리/개별 제안을 구분해 적었습니다.</div><div id="app"></div><div class="note"><b>현재 비교 프레임</b><br>① G7~8: 스포츠·영어·미국문화 적응, 안전한 기숙생활, 영어지원, 친구관계 형성<br>② G9 이후: 학업·대학진학력이 더 높은 보딩으로 전학 가능성 검토<br>③ 비용: 국제학생에게 실제 적용 가능한 공식 Aid/Scholarship 우선 확인<br>④ 종교: Catholic 자체는 허용하되 수도원 중심·강한 신앙형성 학교는 우선순위 낮춤</div></div><script>
+const cols=["학교","위치","G7","보딩 가능 학년","형태","종교","종교 성향","공개/논의 비용","FindingSchool","Niche","국제학생","보딩비율","영어지원","스포츠/적응","재정보조","현재 메모"];
+const groups=[
+{title:"G7부터 보딩 가능한 학교",desc:"현재 G7 입학 시 바로 기숙생활이 가능한 학교입니다.",rows:[
+["Rabun Gap-Nacoochee","Georgia","✅","7~12학년","공학","기독교 계열","낮음~중간","국제 보딩 약 $77.3K; Boarding 평균 FA 약 $29K 공개","A- / 약 #122","A+ / Boarding 약 #114","약 25%대 공개자료","보딩 비중 높음","English Immersion / ESL","매우 적합","국제학생 신청 가능 명시; 65% boarding aid 수혜 공개","공식 자료에서 boarding grades 7-12 재확인"],
+["Tallulah Falls School","Georgia","✅","7~12학년","공학","비종파적 Christian","낮음","공식 국제 약 $47K; 사용자 제안 $45K는 개별 조건","B+ / 약 #168","A+ / Boarding 약 #236","약 16~19%","약 20~27%","ESL 제공 자료 있음","매우 적합","국제학생 평균 aid 공개수치 제한적","공식 자료에서 boarding grades 7-12 재확인"],
+["Saint Stanislaus (SSC)","Mississippi","✅","7~12학년","남학교","Catholic","중간","국제 실제 견적 확인 필요; 사용자 제안 $40K","B+ / 약 #189","A / Boarding 약 #308","약 9%","약 15~22%","G7 ESL 명시","매우 적합","국제학생 FA 신청 가능","공식 Boarding FAQ에서 grades 7-12 확인"],
+["Thomas Jefferson School","Missouri","✅","7~12학년","공학","비종교","낮음","공식 국제 보딩 약 $74.5K","A / 약 #73","A+ / Boarding 약 #98","약 20%대 자료","낮~중간","국제학생 academic support","학업형","국제학생 aid 신청 가능 명시","학교 공식 소개가 grades 7-12 boarding/day 명시"],
+["The Knox School","New York","✅","6~12학년 + PG","공학","비종교","낮음","공식 보딩 $60K + 국제비용/보험/ENL 가능","A- / 약 #105","A+ / Boarding 약 #151","약 40%","약 75%+","ENL 체계 명확","적합","개별 scholarship 가능, 국제 평균 aid 불명확","공식 Middle School 안내에서 6-8 모두 Boarding/Day 가능 확인"],
+["Chaminade College Prep","Missouri","✅","6~12학년","남학교","Catholic / Marianist","중간~강함","국제 총비용 대략 $60K대 초반","A / 약 #79","A권","약 10% 전후","낮~중간","ESL/국제학생 지원","적합","Academic Scholarship 및 국제기숙생 named scholarship 존재","Resident Life에 grades 6-10 취침시간이 별도 명시되어 G6 resident 포함 확인"],
+["St. Bernard's Academy","California","✅","7~12학년 (국제 보딩)","공학","Catholic","중간","대략 $41K~45K 자료","비교 가능한 프로필 제한","A- / Boarding 하위권","학교측 약 15%","약 10%대","국제학생 경로 있음","보통","공개 국제 aid 데이터 제한","공식 International Program에서 grades 7-12 boarding 명시"],
+["The Webb School","Tennessee","✅","7~12학년 (보딩); 6학년 Day only","공학","비종교/독립","낮음","국제 보딩 약 $72.8K","A- / 약 #100","A권","확인 필요","확인 필요","국제학생 지원","적합","국제가정 aid 신청 경로 존재, 평균 국제 award 비공개","수정: 학교 전체는 6-12지만 공식 Middle School 안내상 6학년은 Day only, G7부터 보딩"],
+["Shattuck-St. Mary's","Minnesota","✅","6~12학년 (보딩)","공학","Episcopal 전통/현재 독립성 강함","낮음~중간","약 $73K + 일부 스포츠 프로그램 추가비","A- / 약 #114","A권","높은 편","약 75%","국제학생 지원","스포츠 강함","국제가정 aid 신청 가능, $45K 도달 여부 불명확","2026-27 공식 안내: St. Mary's Hall이 G6-9 보딩"],
+]},
+{title:"G8부터 보딩 가능한 학교",desc:"G7에는 기숙 입학이 불가하고 G8부터 가능한 학교입니다.",rows:[
+["St. Stephen's Episcopal School","Austin, Texas","❌","8~12학년","공학","Episcopal","중간","2026–27 국제 보딩 약 $85.2K","A+ / #21","A+ / #34/441","보딩생 중 약 54%","약 26%","Transitional English / 국제학생 지원","적합","국제학생 FA 검토 가능; 보딩생 약 48% FA 수혜 공개","2026-27 공식 Tuition/Orientation 모두 G8부터 boarding 확인"],
+]},
+{title:"G9부터 보딩 가능한 학교",desc:"G7~8 적응 후 G9 상향지원/전학 후보로 별도 관리합니다.",rows:[
+["Georgetown Preparatory School","North Bethesda, Maryland","❌","9~12학년","남학교","Catholic / Jesuit","중간~강함","FindingSchool/Niche 공개 보딩 약 $78,015","A+ / #40 (2027)","A+ / #40/441","확인 필요","확인 필요","국제학생 지원","스포츠 강함","Niche 기준 33% FA, 평균 약 $26K(학교 전체)","공식 학교가 grades 9-12 boarding/day 명시"],
+["Mount Michael Benedictine","Elkhorn, Nebraska","❌","9~12학년","남학교","Catholic / Benedictine","강함","Niche 공개 boarding 약 $22,865(국내/디렉토리; 국제 7-day 별도 확인)","FindingSchool 종합보딩 순위 확인 필요","A / #262/441","국제학생 별도 입학 경로","주중/기숙 구조 확인 필요","국제학생 지원","적합","Niche 공개: 50% FA, 평균 약 $6.5K(학교 전체)","공식 History가 residential high school grades 9-12 명시"],
+["Maur Hill - Mount Academy","Atchison, Kansas","❌","9~12학년","공학","Catholic / Benedictine","강함","공식 국제 $44,350","B / #232 (2027)","A- / #377/441","약 25%","약 40%","ESL 포함","적합","국제학생 장학/FA 별도 확인","공식 학교가 grades 9-12; 국제 신입은 보통 G9-11, G12는 입학처 사전문의"],
+]},
+{title:"보류 학교",desc:"현재 우선순위를 낮춘 학교입니다. 삭제하지 않고 별도 보관합니다.",rows:[
+["Subiaco Academy","Arkansas","✅","7~12학년","남학교","Catholic / Benedictine","강함","약 $34K~36K대 공개자료","B / 약 #209","A+ / Boarding 약 #186","약 10%","약 40~60%","ESL 자료 있음","적합","Tuition assistance / Abbey scholarship 기금","공식 Residential Life에서 G7-10 Heard Hall 확인; 보딩 G7 시작"],
+["St. Bernard Prep","Alabama","✅","7~12학년","공학","Catholic / Benedictine","중간~강함","국제 공식 약 $55K","B / 약 #226","A권","낮음","약 25%","지원 프로그램 있음","보통","학교가 need-based aid 안내","공식 2026-27 Middle School boarding rates가 G7-8로 명시"],
+["Southeastern Preparatory Academy","Florida","✅","6~12학년, PG","공학","Non-denominational","낮음","약 $35K 공개자료","FS 종합순위 미확인","Niche 전국 보딩순위 미확인","확인 필요","확인 필요","ESL 제공 자료 있음","보통","공개 국제 aid 데이터 제한","BoardingSchoolReview 2026-27 school-verified update: boarding G6-12, PG"],
+["Pillsbury College Prep","Minnesota","✅","6~12학년","공학","Non-denominational","낮음","공식 국제 Full-Time $26K~27.5K 공개(페이지별 차이 있어 재확인 필요)","FS 종합순위 미확인","Niche 전국 보딩순위 미확인","약 50% 공개자료","약 95% 공개자료","ELL 프로그램","보통","공개 국제 aid 데이터 제한","공식 사이트가 국제학생 G6-12 보딩 명시"],
+]}
+];
+function table(g,gi){let h=`<h2>${g.title}</h2><div class="sub">${g.desc}</div><div class="table-wrap"><table><thead><tr>${cols.map(c=>`<th>${c}</th>`).join('')}</tr></thead><tbody>`;g.rows.forEach(r=>{h+=`<tr data-type="${r[4]}" data-religion="${r[6].includes('강함')?'강함':r[6].includes('중간')?'중간':'낮음'}">${r.map((v,i)=>`<td class="${i===0?'school':''}">${v}</td>`).join('')}</tr>`});return h+'</tbody></table></div>'}document.getElementById('app').innerHTML=groups.map(table).join('');const q=document.getElementById('q'),t=document.getElementById('type'),rel=document.getElementById('religion');function f(){const s=q.value.toLowerCase();document.querySelectorAll('tbody tr').forEach(x=>{const a=x.innerText.toLowerCase().includes(s),b=!t.value||x.dataset.type===t.value,c=!rel.value||x.dataset.religion===rel.value;x.style.display=a&&b&&c?'':'none'})}[q,t,rel].forEach(x=>x.addEventListener('input',f));
+</script></body></html>
